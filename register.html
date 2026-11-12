@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8">
+        <title>Реєстрація</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div class="nav-links">
+                <a href="index.html">Платівки</a>
+                <a href="wishlist.html">Бажане</a>
+            </div>
+            <div class="auth-links">
+                <span id="user-name"></span>
+                <button id="logout-button" type="button">Вийти</button>
+                <a id="login-link" href="login.html">Увійти</a>
+                <a id="register-link" href="register.html">Реєстрація</a>
+            </div>
+        </header>
+        <h1>Реєстрація</h1>
+        <p id="register-notice" class="info-message" hidden></p>
+        <form id="register-form">
+            <label for="username">Username *</label>
+            <input id="username" type="text" maxlength="150">
+            <span id="error-username" class="error"></span>
+            <label for="email">Email *</label>
+            <input id="email" type="text" maxlength="254">
+            <span id="error-email" class="error"></span>
+            <label for="first_name">Ім'я</label>
+            <input id="first_name" type="text" maxlength="50">
+            <span id="error-first_name" class="error"></span>
+            <label for="last_name">Прізвище</label>
+            <input id="last_name" type="text" maxlength="50">
+            <span id="error-last_name" class="error"></span>
+            <label for="password">Пароль *</label>
+            <input id="password" type="password" maxlength="128">
+            <span id="error-password" class="error"></span>
+            <label for="password2">Повторіть пароль *</label>
+            <input id="password2" type="password" maxlength="128">
+            <span id="error-password2" class="error"></span>
+            <button type="submit">Зареєструватися</button>
+        </form>
+        <script src="auth.js"></script>
+        <script src="register.js"></script>
+    </body>
+</html>

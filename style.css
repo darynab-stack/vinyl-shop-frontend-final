@@ -1,0 +1,150 @@
+[hidden] {
+    display: none !important;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    max-width: 640px;
+    margin: 40px auto;
+    padding: 0 20px;
+    background-color: #f8f6f2;
+    color: #2b2523;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 28px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #e2ddd5;
+}
+
+.nav-links,
+.auth-links {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+header a {
+    color: #4a3b32;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+header a:hover {
+    color: #8c533e;
+}
+
+#user-name {
+    font-weight: 600;
+    color: #8c533e;
+}
+
+h1 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #382c26;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    border: 1px solid #e7e2d9;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #e7e2d9;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #554840;
+}
+
+input {
+    width: 100%;
+    padding: 9px 12px;
+    margin-top: 4px;
+    border: 1px solid #cfc7bd;
+    border-radius: 4px;
+    background-color: #fdfdfc;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+input:focus {
+    border-color: #8c533e;
+}
+
+button {
+    cursor: pointer;
+    padding: 7px 14px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #4a3b32;
+    color: #ffffff;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #352a23;
+}
+
+#logout-button {
+    background-color: transparent;
+    color: #6d625b;
+    border: 1px solid #d3ccc2;
+    padding: 5px 10px;
+}
+
+#logout-button:hover {
+    background-color: #ede7de;
+    color: #2b2523;
+}
+
+form button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+}
+
+.error {
+    display: block;
+    color: #b33939;
+    font-size: 13px;
+    margin-top: 4px;
+}
+
+.info-message {
+    background-color: #ede7de;
+    color: #4a3b32;
+    padding: 10px 14px;
+    border-radius: 6px;
+    margin-bottom: 16px;
+    font-size: 14px;
+    border-left: 4px solid #8c533e;
+}

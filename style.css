@@ -227,16 +227,16 @@ body:has(#albums-grid) {
     width: auto;
     margin-top: 0;
     padding: 9px 12px;
-    border: 1px solid #cfc7bd;
+    border: 1px solid var(--border);
     border-radius: 4px;
-    background-color: #fdfdfc;
+    background-color: var(--bg2);
     font-size: 14px;
-    color: #2b2523;
+    color: var(--paper);
     outline: none;
 }
 
 .filters-form select:focus {
-    border-color: #8c533e;
+    border-color: var(--gold);
 }
 
 .checkbox-label {
@@ -251,6 +251,7 @@ body:has(#albums-grid) {
 .checkbox-label input[type="checkbox"] {
     width: auto;
     margin: 0;
+    accent-color: var(--gold);
 }
 
 .filters-actions {
@@ -267,18 +268,19 @@ body:has(#albums-grid) {
 
 #reset-filters {
     background-color: transparent;
-    color: #6d625b;
-    border: 1px solid #d3ccc2;
+    color: var(--text);
+    border: 1px solid var(--border);
+    font-weight: 500;
 }
 
 #reset-filters:hover {
-    background-color: #ede7de;
-    color: #2b2523;
+    background-color: var(--panel2);
+    color: var(--paper);
 }
 
 #catalog-status {
     text-align: center;
-    color: #554840;
+    color: var(--text);
     padding: 20px;
 }
 
@@ -291,25 +293,25 @@ body:has(#albums-grid) {
 .album-tile {
     display: flex;
     flex-direction: column;
-    background-color: #ffffff;
-    border: 1px solid #e7e2d9;
+    background-color: var(--panel);
+    border: 1px solid var(--border);
     border-radius: 8px;
     overflow: hidden;
     cursor: pointer;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
-    transition: transform 0.15s, box-shadow 0.15s;
+    transition: transform 0.15s, box-shadow 0.15s, border-color 0.15s;
 }
 
 .album-tile:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border-color: var(--gold);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
 }
 
 .album-tile-cover {
     width: 100%;
     aspect-ratio: 1 / 1;
     object-fit: cover;
-    background-color: #e7e2d9;
+    background-color: var(--panel2);
 }
 
 .album-tile-body {
@@ -322,13 +324,13 @@ body:has(#albums-grid) {
 .album-tile-title {
     margin: 0 0 4px;
     font-size: 16px;
-    color: #382c26;
+    color: var(--paper);
 }
 
 .album-tile-artist {
     margin: 0 0 12px;
     font-size: 14px;
-    color: #6d625b;
+    color: var(--text);
 }
 
 .album-tile-footer {
@@ -342,15 +344,15 @@ body:has(#albums-grid) {
 
 .album-tile-price {
     font-weight: 600;
-    color: #2b2523;
+    color: var(--gold);
 }
 
 .out-of-stock-badge {
     font-size: 12px;
     padding: 2px 6px;
     border-radius: 4px;
-    background-color: #f6e4e4;
-    color: #b33939;
+    background-color: rgba(255, 122, 122, 0.12);
+    color: #ff7a7a;
     font-weight: 500;
 }
 

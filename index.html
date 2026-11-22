@@ -19,9 +19,52 @@
                 <a id="register-link" href="register.html">Реєстрація</a>
             </div>
         </header>
+
         <h1>Платівки</h1>
-        <ul id="list"></ul>
+
+        <form id="filters-form" class="filters-form">
+            <div class="filters-row">
+                <input type="text" id="search-input" placeholder="Пошук за назвою">
+                <select id="genre-select">
+                    <option value="">Усі жанри</option>
+                </select>
+                <select id="artist-select">
+                    <option value="">Усі виконавці</option>
+                </select>
+            </div>
+            <div class="filters-row">
+                <input type="number" id="min-price-input" min="0" placeholder="Ціна від">
+                <input type="number" id="max-price-input" min="0" placeholder="Ціна до">
+                <label class="checkbox-label">
+                    <input type="checkbox" id="in-stock-input">
+                    Тільки в наявності
+                </label>
+                <div class="filters-actions">
+                    <button type="submit">Знайти</button>
+                    <button type="button" id="reset-filters">Скинути</button>
+                </div>
+            </div>
+        </form>
+
+        <p id="catalog-status" hidden></p>
+        <div id="albums-grid" class="albums-grid"></div>
+
+        <div id="album-card" class="modal-overlay" hidden>
+            <div class="modal-content">
+                <button id="close-card" class="modal-close" type="button" aria-label="Закрити">&times;</button>
+                <div id="card-info"></div>
+                <div id="card-cart"></div>
+                <div id="card-notify"></div>
+                <div id="card-tracks"></div>
+                <div id="card-reviews"></div>
+            </div>
+        </div>
+
         <script src="auth.js"></script>
-        <script src="index.js"></script>
+        <script src="cart-button.js"></script>
+        <script src="notify.js"></script>
+        <script src="reviews.js"></script>
+        <script src="tracks.js"></script>
+        <script src="catalog.js"></script>
     </body>
 </html>

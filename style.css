@@ -476,5 +476,14 @@ body:has(#albums-grid) {
     margin-right: 8px;
 }
 
+#wishlist li {
+    gap: 12px;
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
 
 /* === Відгуки і сповіщення (Дарина) === */

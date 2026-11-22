@@ -179,6 +179,7 @@ form button {
 
 #cart-items li span {
     margin-right: auto;
+    color: var(--paper);
 }
 
 #cart-items button:disabled {
@@ -187,11 +188,15 @@ form button {
 }
 
 #cart-message {
-    color: #554840;
+    color: var(--text);
 }
 
 #cart-message a {
-    color: #8c533e;
+    color: var(--gold);
+}
+
+#cart-message a:hover {
+    color: var(--gold2);
 }
 
 #cart-total {
@@ -199,8 +204,9 @@ form button {
     text-align: right;
     font-size: 18px;
     font-weight: 600;
-    color: #382c26;
+    color: var(--gold);
 }
+
 /* === Каталог і картка (Настя) === */
 body:has(#albums-grid) {
     max-width: 960px;

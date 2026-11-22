@@ -178,3 +178,266 @@ form button {
     font-weight: 600;
     color: #382c26;
 }
+/* === Каталог і картка (Настя) === */
+body:has(#albums-grid) {
+    max-width: 960px;
+}
+
+.filters-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.filters-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+
+.filters-form input[type="text"],
+.filters-form input[type="number"],
+.filters-form select {
+    flex: 1 1 160px;
+    width: auto;
+    margin-top: 0;
+    padding: 9px 12px;
+    border: 1px solid #cfc7bd;
+    border-radius: 4px;
+    background-color: #fdfdfc;
+    font-size: 14px;
+    color: #2b2523;
+    outline: none;
+}
+
+.filters-form select:focus {
+    border-color: #8c533e;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 0;
+    cursor: pointer;
+    user-select: none;
+}
+
+.checkbox-label input[type="checkbox"] {
+    width: auto;
+    margin: 0;
+}
+
+.filters-actions {
+    display: flex;
+    gap: 8px;
+    margin-left: auto;
+}
+
+.filters-form button {
+    margin-top: 0;
+    width: auto;
+    padding: 9px 16px;
+}
+
+#reset-filters {
+    background-color: transparent;
+    color: #6d625b;
+    border: 1px solid #d3ccc2;
+}
+
+#reset-filters:hover {
+    background-color: #ede7de;
+    color: #2b2523;
+}
+
+#catalog-status {
+    text-align: center;
+    color: #554840;
+    padding: 20px;
+}
+
+.albums-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+    gap: 18px;
+}
+
+.album-tile {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border: 1px solid #e7e2d9;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+    transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.album-tile:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.album-tile-cover {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    background-color: #e7e2d9;
+}
+
+.album-tile-body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 12px 14px;
+}
+
+.album-tile-title {
+    margin: 0 0 4px;
+    font-size: 16px;
+    color: #382c26;
+}
+
+.album-tile-artist {
+    margin: 0 0 12px;
+    font-size: 14px;
+    color: #6d625b;
+}
+
+.album-tile-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    margin-top: auto;
+    flex-wrap: wrap;
+}
+
+.album-tile-price {
+    font-weight: 600;
+    color: #2b2523;
+}
+
+.out-of-stock-badge {
+    font-size: 12px;
+    padding: 2px 6px;
+    border-radius: 4px;
+    background-color: #f6e4e4;
+    color: #b33939;
+    font-weight: 500;
+}
+
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(43, 37, 35, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    z-index: 1000;
+}
+
+.modal-content {
+    position: relative;
+    width: 100%;
+    max-width: 680px;
+    max-height: 90vh;
+    overflow-y: auto;
+    background-color: #ffffff;
+    border: 1px solid #e7e2d9;
+    border-radius: 8px;
+    padding: 24px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.modal-close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background-color: transparent;
+    color: #6d625b;
+    font-size: 24px;
+    line-height: 1;
+    padding: 4px 10px;
+}
+
+.modal-close:hover {
+    background-color: #ede7de;
+    color: #2b2523;
+}
+
+.card-info-layout {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    margin-bottom: 16px;
+}
+
+.card-cover {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 6px;
+    flex-shrink: 0;
+    background-color: #e7e2d9;
+}
+
+.card-details h2 {
+    margin: 0 0 10px;
+    font-size: 22px;
+    color: #382c26;
+    padding-right: 28px;
+}
+
+.card-details p {
+    margin: 6px 0;
+    font-size: 14px;
+    color: #4a3b32;
+}
+
+.card-price {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.card-stock.in-stock {
+    color: #2f6f44;
+    font-weight: 500;
+}
+
+.card-stock.out-of-stock {
+    color: #b33939;
+    font-weight: 500;
+}
+
+#card-cart,
+#card-notify,
+#card-tracks,
+#card-reviews {
+    margin-top: 14px;
+}
+
+@media (max-width: 560px) {
+    .card-info-layout {
+        flex-direction: column;
+    }
+
+    .card-cover {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1 / 1;
+    }
+}
+
+
+
+/* === Кошик і бажане (Дар'я) === */
+
+
+
+/* === Відгуки і сповіщення (Дарина) === */

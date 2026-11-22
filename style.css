@@ -437,7 +437,9 @@ body:has(#albums-grid) {
 
 
 /* === Кошик і бажане (Дар'я) === */
-
+#card-cart button {
+    margin-right: 8px;
+}
 
 
 /* === Відгуки і сповіщення (Дарина) === */

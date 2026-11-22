@@ -359,7 +359,7 @@ body:has(#albums-grid) {
 .modal-overlay {
     position: fixed;
     inset: 0;
-    background-color: rgba(43, 37, 35, 0.6);
+    background-color: rgba(7, 9, 13, 0.8);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -373,11 +373,15 @@ body:has(#albums-grid) {
     max-width: 680px;
     max-height: 90vh;
     overflow-y: auto;
-    background-color: #ffffff;
-    border: 1px solid #e7e2d9;
+    background-color: var(--panel);
+    border: 1px solid var(--border);
     border-radius: 8px;
     padding: 24px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+.modal-content li {
+    background-color: var(--panel2);
 }
 
 .modal-close {
@@ -385,15 +389,15 @@ body:has(#albums-grid) {
     top: 12px;
     right: 12px;
     background-color: transparent;
-    color: #6d625b;
+    color: var(--text);
     font-size: 24px;
     line-height: 1;
     padding: 4px 10px;
 }
 
 .modal-close:hover {
-    background-color: #ede7de;
-    color: #2b2523;
+    background-color: var(--panel2);
+    color: var(--gold2);
 }
 
 .card-info-layout {
@@ -409,34 +413,34 @@ body:has(#albums-grid) {
     object-fit: cover;
     border-radius: 6px;
     flex-shrink: 0;
-    background-color: #e7e2d9;
+    background-color: var(--panel2);
 }
 
 .card-details h2 {
     margin: 0 0 10px;
     font-size: 22px;
-    color: #382c26;
     padding-right: 28px;
 }
 
 .card-details p {
     margin: 6px 0;
     font-size: 14px;
-    color: #4a3b32;
+    color: var(--text);
 }
 
 .card-price {
     font-size: 16px;
     font-weight: 600;
+    color: var(--gold);
 }
 
 .card-stock.in-stock {
-    color: #2f6f44;
+    color: #6fcf97;
     font-weight: 500;
 }
 
 .card-stock.out-of-stock {
-    color: #b33939;
+    color: #ff7a7a;
     font-weight: 500;
 }
 

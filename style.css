@@ -1,14 +1,31 @@
+:root {
+    --bg: #07090d;
+    --bg2: #0c1219;
+    --panel: #101a25;
+    --panel2: #162030;
+    --border: #1e3045;
+    --gold: #e0a820;
+    --gold2: #ffc94a;
+    --paper: #f4e8d0;
+    --text: #7a99b2;
+    --dim: #2e4458;
+    --white: #ffffff;
+
+    --font-body: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    --font-title: Georgia, "Times New Roman", serif;
+}
+
 [hidden] {
     display: none !important;
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: var(--font-body);
     max-width: 640px;
     margin: 40px auto;
     padding: 0 20px;
-    background-color: #f8f6f2;
-    color: #2b2523;
+    background-color: var(--bg);
+    color: var(--text);
 }
 
 header {
@@ -17,7 +34,7 @@ header {
     align-items: center;
     margin-bottom: 28px;
     padding-bottom: 14px;
-    border-bottom: 1px solid #e2ddd5;
+    border-bottom: 1px solid var(--border);
 }
 
 .nav-links,
@@ -28,25 +45,30 @@ header {
 }
 
 header a {
-    color: #4a3b32;
+    color: var(--text);
     text-decoration: none;
     font-weight: 500;
     transition: color 0.2s;
 }
 
 header a:hover {
-    color: #8c533e;
+    color: var(--gold2);
 }
 
 #user-name {
     font-weight: 600;
-    color: #8c533e;
+    color: var(--gold);
+}
+
+h1,
+h2 {
+    font-family: var(--font-title);
+    color: var(--paper);
 }
 
 h1 {
-    font-size: 26px;
+    font-size: 28px;
     margin-bottom: 20px;
-    color: #382c26;
 }
 
 ul {

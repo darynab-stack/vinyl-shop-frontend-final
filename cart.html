@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8">
+        <title>Кошик</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div class="nav-links">
+                <a href="index.html">Платівки</a>
+                <a href="wishlist.html">Бажане</a>
+                <a href="cart.html">Кошик</a>
+            </div>
+            <div class="auth-links">
+                <span id="user-name"></span>
+                <button id="logout-button" type="button">Вийти</button>
+                <a id="login-link" href="login.html">Увійти</a>
+                <a id="register-link" href="register.html">Реєстрація</a>
+            </div>
+        </header>
+        <h1>Кошик</h1>
+        <p id="cart-message"></p>
+        <ul id="cart-items"></ul>
+        <p id="cart-total"></p>
+        <script src="auth.js"></script>
+        <script src="cart.js"></script>
+    </body>
+</html>

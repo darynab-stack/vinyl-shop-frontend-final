@@ -148,3 +148,33 @@ form button {
     font-size: 14px;
     border-left: 4px solid #8c533e;
 }
+
+#cart-items li {
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+#cart-items li span {
+    margin-right: auto;
+}
+
+#cart-items button:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+#cart-message {
+    color: #554840;
+}
+
+#cart-message a {
+    color: #8c533e;
+}
+
+#cart-total {
+    margin-top: 20px;
+    text-align: right;
+    font-size: 18px;
+    font-weight: 600;
+    color: #382c26;
+}

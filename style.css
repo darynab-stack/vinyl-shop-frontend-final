@@ -487,3 +487,136 @@ button:disabled {
 
 
 /* === Відгуки і сповіщення (Дарина) === */
+.notify-button {
+    background-color: transparent;
+    color: var(--gold);
+    border: 1px solid var(--gold);
+}
+
+.notify-button:hover {
+    background-color: var(--panel2);
+    color: var(--gold2);
+}
+
+.notify-message {
+    margin: 8px 0 0;
+    font-size: 13px;
+    color: var(--paper);
+}
+
+.reviews-title {
+    margin: 8px 0 12px;
+    padding-top: 14px;
+    border-top: 1px solid var(--border);
+    color: var(--paper);
+    font-family: var(--font-title);
+}
+
+.review-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 14px;
+}
+
+.review {
+    padding: 10px 12px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background-color: var(--panel2);
+}
+
+.review-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 10px;
+}
+
+.review-header strong {
+    color: var(--paper);
+}
+
+.review-stars {
+    color: var(--gold);
+    letter-spacing: 1px;
+}
+
+.review-date {
+    margin-left: auto;
+    font-size: 12px;
+    color: var(--dim);
+}
+
+.review-text {
+    margin: 6px 0 0;
+    line-height: 1.4;
+    white-space: pre-line;
+}
+
+.review-actions,
+.review-form-actions {
+    display: flex;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.secondary-button {
+    background-color: transparent;
+    color: var(--text);
+    border: 1px solid var(--border);
+    font-weight: 500;
+    padding: 5px 10px;
+}
+
+.secondary-button:hover {
+    background-color: var(--panel);
+    color: var(--paper);
+}
+
+.review-form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.review-form textarea,
+.review-form select {
+    width: 100%;
+    padding: 9px 12px;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    background-color: var(--bg2);
+    color: var(--paper);
+    font-family: var(--font-body);
+    font-size: 14px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.review-form textarea {
+    min-height: 70px;
+    resize: vertical;
+}
+
+.review-form textarea:focus,
+.review-form select:focus {
+    border-color: var(--gold);
+}
+
+.review-form .error:empty {
+    display: none;
+}
+
+.review-form button {
+    width: auto;
+    margin-top: 0;
+}
+
+.review-hint {
+    font-size: 14px;
+}
+
+.review-hint a {
+    color: var(--gold);
+}

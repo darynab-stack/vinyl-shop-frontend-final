@@ -30,8 +30,10 @@ body {
 
 header {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    gap: 12px 24px;
     margin-bottom: 28px;
     padding-bottom: 14px;
     border-bottom: 1px solid var(--border);
@@ -40,6 +42,7 @@ header {
 .nav-links,
 .auth-links {
     display: flex;
+    flex-wrap: wrap;
     gap: 12px;
     align-items: center;
 }
@@ -58,6 +61,34 @@ header a:hover {
 #user-name {
     font-weight: 600;
     color: var(--gold);
+}
+
+.logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-right: 8px;
+    font-family: var(--font-title);
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: var(--gold);
+}
+
+.logo::before {
+    content: "";
+    flex-shrink: 0;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border: 1px solid var(--gold);
+    background: radial-gradient(
+        circle,
+        var(--gold) 0,
+        var(--gold) 20%,
+        var(--panel2) 22%,
+        var(--bg2) 100%
+    );
 }
 
 h1,
